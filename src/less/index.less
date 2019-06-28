@@ -1,0 +1,70 @@
+@bgcolor : #1ddddd;
+
+// 菜单
+#menu {
+  padding-top: 0.4rem;
+  padding-bottom: 0.2rem;
+  background-color: #f1f1f1;
+  .row {
+    padding: 0.4rem 0px;
+    background-color: #fff;
+    transition: all 1s;
+    .menu-item {
+      width: 25%;
+      text-align: center;
+      float: left;
+      overflow: hidden;
+      margin-top: 0.6rem;
+      transition: all 1s;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        img {
+          width: 2rem;
+        }
+        p {
+          text-align: center;
+          font-size: 0.48rem;
+          margin-top: 0.2rem;
+        }
+      }
+      &.active {
+        transform: scale(0);
+        height: 0;
+      }
+    }
+  }
+}
+
+.list-title {
+  .list-title-content {
+    height: 1.4rem;
+    background-color: @bgcolor;
+    background: -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      from(@bgcolor),
+      to(@bgcolor)
+    );
+    border-bottom: solid 1px @bgcolor;
+    line-height: 1.4rem;
+    overflow: hidden;
+    color: #fff;
+    padding-left: 0.4rem;
+    font-weight: bold;
+    font-size: 0.72rem;
+    clear: both;
+    span {
+      font-weight: normal;
+      font-size: 0.64rem;
+    }
+    img {
+      float: right;
+      margin-right: 0.4rem;
+      color: #fff;
+      margin-top: 0.32rem;
+    }
+  }
+}

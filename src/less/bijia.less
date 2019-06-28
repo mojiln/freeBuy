@@ -1,0 +1,114 @@
+@bgcolor : #1ddddd;
+// 展示页
+.product-bijia {
+  text-align: center;
+  .product-name {
+    padding-top: 0.8rem;
+  }
+  .product-img img {
+    width: 6.8rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .product-collect {
+    text-align: right;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+// tab栏
+.tab {
+  line-height: 1.36rem;
+  font-size: 0.6rem;
+  z-index: 0;
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(#35baaa),
+    to(rgb(12, 122, 138))
+  );
+  border-top: solid 1px @bgcolor;
+  border-bottom: 1px solid @bgcolor;
+  ul {
+    // width: 100%;
+    height: 1.36rem;
+    li {
+      float: left;
+      width: 33.33%;
+      text-align: center;
+      height: 1.36rem;
+      border-right: 0.04rem solid #fff;
+      a {
+        color: #fff;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// price
+.price {
+  height: 2.4rem;
+  font-size: 0.56rem;
+  .logo {
+    height: 1.7rem;
+    line-height: 1.7rem;
+    padding-left: 0.5rem;
+    border-bottom: 0.02rem solid #666;
+    span {
+      padding-left: 0.5rem;
+    }
+    .proPrice {
+      float: right;
+      color: @bgcolor;
+      padding-right: 0.2rem;
+    }
+    button {
+      width: 2.24rem;
+      height: 0.96rem;
+      border-radius: 0.24rem;
+      text-align: center;
+      line-height: 0.96rem;
+      background-color: @bgcolor;
+      color: #fff;
+      font-size: 0.56rem;
+      margin-top: 0.4rem;
+      float: right;
+    }
+  }
+  .note {
+    font-size: 0.32rem;
+    color: #888;
+    padding: 0.2rem 0.4rem;
+    line-height: 0.72rem;
+  }
+}
+
+.product-com-title {
+  overflow: hidden;
+  margin-top: 0.2rem;
+}
+.more {
+  padding: 0 0.32rem;
+  margin-top: 0.64rem;
+  .morein {
+    display: block;
+    height: 1.28rem;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    background-color: #d4d4d4;
+    background: -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      from(#f1f1f1),
+      to(#d4d4d4)
+    );
+    border-bottom: 0.04rem solid #bababa;
+    border-radius: 0.2rem;
+    line-height: 1.28rem;
+  }
+}

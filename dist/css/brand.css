@@ -1,0 +1,59 @@
+.hot {
+  font-size: 0.64rem;
+  color: #874604;
+  height: 1.6rem;
+  padding-left: 0.4rem;
+  line-height: 1.6rem;
+  margin: 0.4rem 0.2rem;
+  border: 0.04rem solid #cccccc;
+  background-color: #eeeeee;
+}
+.row li {
+  border-bottom: 0.04rem solid #e7e7e7;
+  padding: 0.4rem;
+}
+.row li a {
+  color: #000;
+}
+.row li i {
+  width: 0.8em;
+  height: 0.8em;
+  font-family: '宋体';
+  font-weight: 700;
+}
+.row li em {
+  width: 0.8rem;
+  height: 0.8rem;
+  text-align: center;
+  background: #c9c9c9;
+  color: #fff;
+  line-height: 0.8rem;
+  vertical-align: top;
+  margin: 0 0.4rem 0 0;
+  font-size: 0.56rem;
+  display: inline-block;
+}
+.row li .inner {
+  display: inline-block;
+}
+.row li .inner .tit {
+  color: #000;
+  font-size: 0.56rem;
+}
+.row li .inner p {
+  color: #999;
+  margin-top: 0.12rem;
+  font-size: 0.56rem;
+}
+.row li:nth-child(1) em {
+  background: #1ddddd;
+}
+.row li:nth-child(2) em {
+  background: #625496;
+}
+.row li:nth-child(3) em {
+  background: #b5b0c9;
+}
+.row li:nth-child(4) em {
+  background: #cfcdd8;
+}

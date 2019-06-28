@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="stylesheet" href="./css/sitenav.min.css" />
+  <title>商城导航</title>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script src="./js/rem.min.js"></script>
+</head>
+
+<body>
+  <header id="header" class="header">
+    <a href="javascript:history.go(-1);" class="back fl">
+      &lt;</a>
+    <h1>商城导航</h1>
+    <div class="appdown">
+      <a href="javascript:;" title="手机app下载">
+        <img src="./img/header_app.png" alt="手机app下载" />
+      </a>
+    </div>
+  </header>
+
+  <main class="site-nav">
+    <div class="link clearfix">
+      <!-- 挖坑 -->
+    </div>
+  </main>
+
+
+  <!-- 登录注册模块 -->
+  <!-- 底部log -->
+  <!-- @@include ./template/footer.html -->
+
+  <script src="lib/template-web.js"></script>
+  <script src="./js/sitenav.min.js"></script>
+
+  <!-- 店铺渲染 -->
+  <script type="text/html" id="tpl">
+    {{each result v i}}
+    <a href="{{v.navHref}}" target="_blank">
+      <img src="{{v.navImg}}" alt="">
+      {{v.navTitle}}
+    </a>
+    {{/each}}
+  </script>
+
+
+</body>
+
+</html>

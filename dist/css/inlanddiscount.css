@@ -1,0 +1,80 @@
+#header .back {
+  color: #fff;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  line-height: 2rem;
+}
+#header h1 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 2rem;
+  text-align: center;
+  padding-right: 0.8rem;
+}
+main {
+  background-color: #fff;
+  text-align: left;
+  font-size: 0.56rem;
+  margin: 0 auto;
+}
+main ul {
+  width: 100%;
+  padding: 0 0 0.4rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+main ul li {
+  float: left;
+  padding: 0.4rem 0 0 0.4rem;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+  border: 0.04rem solid #eee;
+  box-sizing: border-box;
+  border-top-width: 0;
+  overflow: hidden;
+}
+main ul li a {
+  display: block;
+}
+main ul li a .img {
+  margin: 0.4rem auto;
+  width: 5.6rem;
+  height: 5.6rem;
+  overflow: hidden;
+}
+main ul li a .img img {
+  width: 5.6rem;
+  height: 5.6rem;
+}
+main ul li a .title {
+  color: #333;
+  font-weight: 700;
+  height: 1.44rem;
+  text-align: left;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  font-size: 0.56rem;
+  padding: 0 0.32rem;
+  overflow: hidden;
+  line-height: 0.72rem;
+}
+main ul li a .subtit {
+  color: #1ddddd;
+  margin-top: 0.5rem;
+  height: 0.72rem;
+  text-align: left;
+}
+main ul li a .info {
+  padding: 0.24rem 0.32rem;
+}
+main ul li a .info .mall {
+  color: #a1a1a1;
+  font-size: 0.48rem;
+  text-align: left;
+}

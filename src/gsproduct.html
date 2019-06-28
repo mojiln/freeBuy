@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="stylesheet" href="./css/gsproduct.min.css" />
+  <title>凑单品</title>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script src="./js/rem.min.js"></script>
+</head>
+
+<body>
+  <header id="header" class="header">
+    <a href="javascript:history.go(-1);" class="back fl">
+      &lt;</a>
+    <h1>凑单品</h1>
+    <div class="appdown">
+      <a href="javascript:;" title="手机app下载">
+        <img src="./img/header_app.png" alt="手机app下载" />
+      </a>
+    </div>
+  </header>
+
+  <main class="list">
+    <div class="hd">
+      <div class="filter">
+        <ul>
+          <li class="shopTop" data-choose="0">
+            <a>京东</a>
+          </li>
+          <li class="area" data-choose="1">
+            <a>华北</a>
+          </li>
+          <li class="allPrice">
+            <a>全部价格</a>
+          </li>
+        </ul>
+      </div>
+      <div id="shop" class="popsort popbox">
+        <ul>
+          <!-- 挖坑 -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="bd gs-product-list">
+      <ul id="container" class="masonry">
+        <!-- 挖商品的坑 -->
+      </ul>
+    </div>
+  </main>
+
+  <!-- 登录注册模块 -->
+  <!-- 底部log -->
+  <!-- @@include ./template/footer.html -->
+
+  <script src="lib/template-web.js"></script>
+  <script src="./js/gsproduct.min.js"></script>
+
+  <!-- 店铺渲染 -->
+  <script type="text/html" id="shopTpl">
+    {{each result v i}}
+    <li class="" data-id="{{v.shopId}}"><a>{{v.shopName}}</a></li>
+    {{/each}}
+  </script>
+
+  <!-- 区域渲染 -->
+  <script type="text/html" id="areaTpl">
+    {{each result v i}}
+    <li class="" data-id="{{v.areaId}}"><a>{{v.areaName}}</a></li>
+    {{/each}}
+  </script>
+
+  <!-- 商品渲染 -->
+  <script type="text/html" id="productTpl">
+    {{each result v i}}
+    <li>
+      <a href="#" class="item border-img">
+        <div class="pic">
+          <img src="{{v.productImg}}"
+            style="width: 174px; height: 174px;">
+        </div>
+        <div class="title">{{v.productName}}</div>
+        <div class="other">
+          <div class="price">{{v.productPrice}}</div>
+          <div class="btn fr">去凑单</div>
+          <div class="clearfix"></div>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+  </script>
+</body>
+
+</html>

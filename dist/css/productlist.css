@@ -1,0 +1,37 @@
+#recommen-product .recommen-product-list {
+  background-color: #fff;
+  text-align: left;
+  font-size: 0.56rem;
+  margin: 0 auto;
+}
+#recommen-product .recommen-product-list li {
+  padding: 0.56rem 0.32rem;
+  position: relative;
+  border-bottom: 0.04rem solid #e7e7e7;
+}
+#recommen-product .recommen-product-list li a {
+  color: #000;
+}
+#recommen-product .recommen-product-list li a .pic {
+  float: left;
+  width: 4.4rem;
+}
+#recommen-product .recommen-product-list li a .pic img {
+  width: 4rem;
+  height: 4rem;
+}
+#recommen-product .recommen-product-list li a .info {
+  font-size: 0.56rem;
+  line-height: 0.96rem;
+  padding-left: 3.6rem;
+}
+#recommen-product .recommen-product-list li a .info .price > em {
+  font-size: 0.72rem;
+  color: #ea3900;
+  vertical-align: middle;
+  float: left;
+}
+#recommen-product .recommen-product-list li a .info .other {
+  color: #a1a1a1;
+  font-size: 0.48rem;
+}

@@ -1,0 +1,81 @@
+@bgcolor : #1ddddd;
+// 头部区域
+#header {
+  .back {
+    color: #fff;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    line-height: 2rem;
+  }
+  h1 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 2rem;
+    text-align: center;
+    padding-right: 0.8rem;
+  }
+}
+
+main {
+  background: #fff;
+  .middleTip {
+    font-size: 0.48rem;
+    text-align: center;
+    color: rgb(153, 153, 153);
+    margin: 0.32rem 0px;
+  }
+  .coupon-list {
+    ul {
+      li {
+        border-bottom: 1px solid #e7e7e7;
+        position: relative;
+        overflow: hidden;
+        a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          padding: 10px;
+          box-sizing: content-box;
+        }
+        .pic {
+          width: 4rem;
+          height: 3.2rem;
+          overflow: hidden;
+          margin-right: 0.4rem;
+          float: left;
+          img {
+            width: 4rem;
+            height: auto;
+          }
+        }
+        .info {
+          padding-right: 0.6rem;
+          overflow: hidden;
+          color: #000;
+          .tit {
+            h3 {
+              margin: 0;
+              padding: 0;
+              word-break: break-all;
+              text-align: justify;
+              font-size: 0.56rem;
+              font-weight: 400;
+              color: #333;
+              line-height: 0.8rem;
+            }
+            h2 {
+              font-weight: 700;
+              font-size: 0.56rem;
+            }
+          }
+          .time {
+            font-size: 0.48rem;
+            color: @bgcolor;
+            margin-top: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+}

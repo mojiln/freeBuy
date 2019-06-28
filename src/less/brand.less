@@ -1,0 +1,64 @@
+@bgcolor : #1ddddd;
+.hot {
+  font-size: 0.64rem;
+  color: rgb(135, 70, 4);
+  height: 1.6rem;
+  padding-left: 0.4rem;
+  line-height: 1.6rem;
+  margin: 0.4rem 0.2rem;
+  border: 0.04rem solid rgb(204, 204, 204);
+  background-color: rgb(238, 238, 238);
+}
+
+.row {
+  li {
+    border-bottom: 0.04rem solid #e7e7e7;
+    padding: 0.4rem;
+    a {
+      color: #000;
+    }
+    i {
+      width: 0.8em;
+      height: 0.8em;
+      font-family: '宋体';
+      font-weight: 700;
+    }
+    em {
+      width: 0.8rem;
+      height: 0.8rem;
+      text-align: center;
+      background: #c9c9c9;
+      color: #fff;
+      line-height: 0.8rem;
+      vertical-align: top;
+      margin: 0 0.4rem 0 0;
+      font-size: 0.56rem;
+      display: inline-block;
+    }
+    .inner {
+      display: inline-block;
+      .tit {
+        color: #000;
+        font-size: 0.56rem;
+      }
+      p {
+        color: #999;
+        margin-top: 0.12rem;
+        font-size: 0.56rem;
+      }
+    }
+  }
+  li:nth-child(1) em {
+    background: @bgcolor;
+  }
+
+  li:nth-child(2) em {
+    background: rgb(98, 84, 150);
+  }
+  li:nth-child(3) em {
+    background: rgb(181, 176, 201);
+  }
+  li:nth-child(4) em {
+    background: rgb(207, 205, 216);
+  }
+}

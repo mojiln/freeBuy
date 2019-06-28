@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="stylesheet" href="./css/moneyctrl.min.css" />
+  <title>省钱控</title>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script src="./js/rem.min.js"></script>
+</head>
+
+<body>
+  <header id="header" class="header">
+    <a href="javascript:history.go(-1);" class="back fl">
+      &lt;</a>
+    <h1>省钱控 - 最新优惠</h1>
+    <div class="appdown">
+      <a href="javascript:;" title="手机app下载">
+        <img src="./img/header_app.png" alt="手机app下载" />
+      </a>
+    </div>
+  </header>
+
+  <!-- 商品部分 -->
+  <main id="recommen-product">
+    <div class="recommen-product-list product-list cu-list">
+      <ul>
+        <!-- 挖坑 -->
+      </ul>
+    </div>
+  </main>
+
+  <!-- 分页模块 -->
+  <div class="clearfix page">
+    <span class="w33">
+      <a href="#" id="pageAdd">上一页</a>
+    </span>
+    <span class="w33">
+      <select id="selectPage" name="select">
+        <!-- options -->
+      </select>
+    </span>
+    <span class="w33">
+      <a href="#" id="pageRemove">下一页</a>
+    </span>
+  </div>
+
+  <!-- 登录注册模块 -->
+  <!-- 底部log -->
+  <!-- @@include ./template/footer.html -->
+
+  <script src="lib/template-web.js"></script>
+  <script src="./js/moneyctrl.min.js"></script>
+
+  <script type="text/html" id="productTpl">
+    {{each result v i}}
+    <li class="clearfix ui-border-b">
+      <a href="moneyproduct.html?productid={{v.productId}}">
+        <div class="pic">
+          <img
+            src="{{v.productImgLg.src}}"
+            alt="{{v.productName}}"
+            onerror="javascript:this.src='img/none.png';"
+          />
+        </div>
+        <div class="clearfix info">
+          <div class="title">
+            {{v.productName}}<br/>
+            <span>{{v.productPinkage}}</span>
+          </div>
+          <div class="other">
+            <span class="mall">
+              {{v.productFrom}} | {{v.productTime}}
+            </span>
+            <span class="comment">
+              <i class="icon-comment"></i>
+              {{v.productComCount}}
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+  </script>
+</body>
+
+</html>

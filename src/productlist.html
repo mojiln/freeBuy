@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="stylesheet" href="./css/productLIst.min.css" />
+  <title>商品分类</title>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script src="./js/rem.min.js"></script>
+
+</head>
+
+<body>
+  <!-- 头部log -->
+  <!-- @@include ./template/header.html -->
+  <!-- 搜索框 -->
+  <!-- @@include ./template/search.html -->
+
+  <!-- 导航 -->
+  <nav class="product-list-title">
+    <a href="/" class="list-title1">首页</a> &gt; <a class="list-title2">全部分类</a> &gt; <a class="list-title3"
+      id="category"></a> &gt; <a class="select">筛选</a>
+  </nav>
+
+  <!-- 商品主页 -->
+  <main id="recommen-product">
+    <div class="recommen-product-list product-list cu-list">
+      <ul>
+        <!-- 挖坑 -->
+      </ul>
+    </div>
+  </main>
+
+  <!-- 分页模块 -->
+  <div class="clearfix page">
+    <span class="w33">
+      <a href="#" id="pageAdd">上一页</a>
+    </span>
+    <span class="w33">
+      <select id="selectPage" name="select">
+        <!-- options -->
+      </select>
+    </span>
+    <span class="w33">
+      <a href="#" id="pageRemove">下一页</a>
+    </span>
+  </div>
+
+  <!-- 登录注册模块 -->
+  <!-- 底部log -->
+  <!-- @@include ./template/footer.html -->
+
+  <script src="lib/template-web.js"></script>
+  <script src="./js/productlist.min.js"></script>
+  <script type="text/html" id="proTpl">
+    {{each list v i}}
+    <li>
+      <a href="./bijia.html?productId={{v.productId}}&amp;category={{v.categoryId}}">
+        <div class="pic">
+          <img src="{{v.productImg.src}}"
+            alt="{{v.productImg.alt}}">
+        </div>
+        <div class="info">
+          <div class="tit">{{v.productName}}</div>
+          <div class="price"><em>{{v.productPrice}}</em> 
+          <!-- <span class="star"><em class="star5"></em></span> -->
+          </div>
+          <br />
+          <div class="other"><em>{{v.productQuote}}</em> <em>{{v.productCom}}</em></div>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+  </script>
+
+</body>
+
+</html>

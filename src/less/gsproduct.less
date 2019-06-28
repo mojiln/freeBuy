@@ -1,0 +1,126 @@
+@bgcolor : #1ddddd;
+// 头部区域
+#header {
+  .back {
+    color: #fff;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    line-height: 2rem;
+  }
+  h1 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 2rem;
+    text-align: center;
+    padding-right: 0.8rem;
+  }
+}
+
+main {
+  background-color: #fff;
+  .hd {
+    height: 1.52rem;
+    position: relative;
+    .filter {
+      width: 100%;
+      height: 1.52rem;
+      overflow: hidden;
+      border-bottom: 0.04rem solid #dadada;
+      ul {
+        width: 100%;
+        li {
+          float: left;
+          line-height: 1.48rem;
+          width: 33.33%;
+          box-sizing: border-box;
+          text-align: center;
+          a {
+            width: 100%;
+            font-size: 0.64rem;
+            color: #000;
+          }
+        }
+      }
+    }
+    .popbox {
+      width: 100%;
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      top: 1.52rem;
+      display: none;
+      z-index: 10;
+      ul {
+        li {
+          height: 1.52rem;
+          border-bottom: 0.04rem solid #ddd;
+          position: relative;
+          a {
+            display: block;
+            line-height: 1.6rem;
+            padding: 0 0.4rem;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+
+  .bd {
+    background-color: #f1f1f1;
+    padding: 0.24rem 0;
+    ul {
+      width: 98%;
+      margin: 0 auto;
+      li {
+        float: left;
+        width: 50%;
+        a {
+          display: block;
+          margin: 0.16rem;
+          background-color: #fff;
+          .pic {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            overflow: hidden;
+            img {
+              width: 6.96rem;
+              height: 6.96rem;
+            }
+          }
+          .title {
+            color: #333;
+            word-break: break-all;
+            padding: 0 0.24rem;
+            height: 0.56rem;
+            overflow: hidden;
+            font-size: 0.48rem;
+            line-height: 0.56rem;
+            font-weight: 400;
+            text-align: left;
+            margin-top: 0.24rem;
+          }
+          .other {
+            padding: 0.24rem;
+            .price {
+              float: left;
+              color: @bgcolor;
+              font-size: 0.8rem;
+            }
+            .btn {
+              font-size: 0.56rem;
+              color: #fff;
+              border-radius: 0.12rem;
+              background-color: @bgcolor;
+              padding: 0.16rem 0.4rem;
+              text-decoration: none;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
